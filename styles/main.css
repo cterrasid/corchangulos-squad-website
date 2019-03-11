@@ -1,0 +1,793 @@
+/*GENERAL*/
+body{
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+/*CSS HEADER*/
+
+.nameandnav {
+    position: absolute;
+    width: 100%;
+}
+
+.mainheader{
+    height: 467px;
+}
+
+.namegroup{
+    height: 60px;
+    background-color: #099d8d;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    opacity: 0.95;    
+    letter-spacing: 1px; 
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.nav{
+    height: 45px; 
+    background-color: #14d9c4;   
+    opacity: 0.9;
+    display: flex;
+    justify-content: center;
+}
+
+.navlist{   
+    width: 100%;
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    justify-content: space-evenly; 
+    align-items:center;   
+    letter-spacing: 1px;
+}
+
+.linksheader{
+    height: 30px;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.frontpage{
+    height: 421px;
+    background-image: url(../images/hero3.jpg);   
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.claim{
+    height: 50px;
+    background-color: white;
+    margin: 0px 15px;
+    padding: 14px 15px 16px 15px;
+    font-family: 'Open+sans', sans-serif;
+    line-height: 1.39;
+    font-weight: 600;
+    text-align: center;
+    transform: translate(0px, -39px);
+    letter-spacing: 1px;
+    
+}
+
+
+
+
+/*CSS TEAM*/
+
+.section-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.section-title {
+    font-family: 'Rubik', 'Sans-Serif';
+    font-size: 24px;
+    font-weight: 500px;
+    line-height: 45px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    color: #14d9c4;
+    letter-spacing: 1px;
+}
+
+.content-main {
+    font-family: 'Open-Sans', 'Sans-Serif';
+    font-size: 16px;
+    padding: 15px;
+    color: #54585a;
+}
+  
+.link {
+     color:  #14d9c4;
+     text-decoration: none;
+}
+
+.content {
+    text-align: center;
+    margin: 15px;
+    font-family: 'Open-Sans', 'Sans-Serif';
+    color: #54585a;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+/*CSS STRENGTHS-WEAKNESSES*/
+
+.strengths-and-weaknesses {
+    width: 100%;
+    background-color: #e9e9e9;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 45px;
+    color: #b8b8b9;
+}
+
+.content-strenghts {
+    margin: 15px;
+    font-family: 'Open-Sans', 'Sans-Serif';
+    color: #54585a;
+    line-height: 24px;
+    flex-basis: 50%;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    font-size: 16px;
+ 
+    
+}
+
+.contentd{
+    margin-bottom: 0px;
+}
+
+.subtitle { 
+  color: #099d8d;
+  font-family: 'Rubik', 'Sans-Serif';
+  font-size: 21px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.5px;
+  line-height: 2.05;
+  margin-bottom: 5px;
+  margin-top: 0px;
+
+}
+
+.square {
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-15px,-15px) rotate(45deg);
+}
+
+/*CSS ADALABERS*/
+
+/* Photos */
+
+.photo-container {
+    box-sizing: content-box;
+    height: 180px;
+    width: 180px;
+    border-radius: 4px;
+    border: solid 5px #e9e9e9;
+    margin: auto;
+}
+
+.photo-container-right {
+    box-sizing: content-box;
+    height: 180px;
+    width: 180px;
+    border-radius: 4px;
+    border: solid 5px #e9e9e9;
+    margin: auto;
+}
+
+.photo {
+    height: 180px;
+    width: 180px;
+}
+
+.adalaber-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+
+}
+
+.adalaber-info-container-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+
+}
+
+.icons-ul {
+    width: 100vw;
+    max-width: 124px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.icon-first {
+    flex-basis: 19%;
+}
+
+.icon {
+    flex-basis: 35%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon-dot {
+    height: 2px;
+    width: 2px;
+    background-color: #54585a;
+    border-radius: 50%;
+    display: inline-block;
+    align-self: center;
+}
+
+.icon-link {
+    text-decoration: none;
+}
+
+.icon-about-us {
+    margin: 0px;
+    display: block;
+    color: #099d8d;
+}
+
+.visually-hidden {
+    /* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
+   position: absolute !important;
+   height: 1px; width: 1px;
+   overflow: hidden;
+   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+   clip: rect(1px, 1px, 1px, 1px);
+}
+
+/*Text*/
+
+.about-us-title {
+    font-family: 'Rubik', 'Sans-Serif';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 45px;
+    color: #099d8d;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.adalaber-name {
+    font-family: 'Open-Sans', 'Sans-Serif';
+    font-size: 20px;
+    line-height: 45px;
+    color: black;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.adalaber-name-right {
+    font-family: 'Open-Sans', 'Sans-Serif';
+    font-size: 20px;
+    line-height: 45px;
+    color: black;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.adalaber-text {
+    text-align: center;
+    font-family: 'Open-Sans', 'Sans-Serif';
+    font-size: 16px;
+    line-height: 24px;
+    color: #54585a;
+    box-sizing: border-box;   
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.adalaber-text-right {
+    text-align: center;
+    font-family: 'Open-Sans', 'Sans-Serif';
+    font-size: 16px;
+    line-height: 24px;
+    color: #54585a;
+    box-sizing: border-box;   
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+/*CSS FOOTER*/
+footer {
+    border-top: 1px solid #b8b8b9;
+    height: 250px;
+}
+.container-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.copyright {
+    font-family: 'Open-Sans', 'Sans-Serif';
+    font-size: 14px;
+    color: #b8b8b9;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+.logo-adalab {
+    width: 115.9px;
+    height: 45px;
+    margin-top: 30px;
+}
+.links-footer-list{
+    text-align: center;
+    list-style: none;
+    padding: 0px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+.links-footer {
+    color: #54585a;
+    font-size: 14px;
+    opacity: 0.75;
+    line-height: 1.43;
+    font-weight: 550;
+    font-family: 'Rubik';
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+@media all and (min-width:768px){
+
+    /*HEADER*/
+
+    .mainheader{
+        height: 421px;
+    }
+    .nameandnav{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        opacity: 0.7;
+        background-color: #099d8d;
+        position: absolute;
+    }
+    .namegroup{
+        width: 50%;
+        padding-left: 45px;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .nav{
+        width: 50%;
+        height: 60px;
+        padding-right: 45px;
+        background-color: #099d8d;
+        justify-content: flex-end;
+    }
+    
+    .frontpage{
+        height: 421px;
+    }
+    .claim{
+        padding: 15px 30px;
+        width: 381px;
+        height: 50px;
+        margin-left: 45px;
+        opacity: 0.7;
+        transform: translate(0px, -80px);
+    }
+    .claim p{
+        margin:15px 0px;
+    }
+
+    /*TEAM*/
+
+    .section-title {
+        line-height: 1.88;
+        margin-top: 45px;
+        
+    }
+    
+    .content {
+        margin-bottom: 60px;
+        margin-top: 15px;
+        margin-left: 45px;
+        margin-right: 45px;
+        line-height: 24px;
+
+    }
+
+    /*STRENGHTS AND WEAKNESSES*/
+
+    .strengths-and-weaknesses {
+        width: 100vw;
+        background-color: #e9e9e9;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 60px;
+        justify-content: space-around;
+        background-color: #e9e9e9;
+        box-sizing: border-box;
+        align-items: baseline;
+        padding-top: 45px;
+        align-content: center;
+    }
+
+    .strengths{
+        
+        flex-basis: 50%;
+    }
+  
+    .weaknesses{
+        
+        flex-basis: 50%;
+    }
+    .subtitle{
+        margin-bottom: 15px;
+    }
+    .contents{
+        margin-bottom: 0px;
+        margin-left: 45px;
+        padding-right: 15px;
+        margin-right: 15px;
+        vertical-align: center;
+    }
+
+    .contentd{
+        margin-right: 45px;
+        margin-left: 0px;
+        padding-left: 15px;
+        margin-left: 0px;
+    }
+    
+   
+        
+
+    /*ADALABERS*/
+
+    #antonella, #ioana, #valeria {
+        display: flex;
+        flex-direction: row;
+        height: 300px;
+    }
+
+    #clarette, #sandra {
+        display: flex;
+        flex-direction: row-reverse;
+        height: 300px;
+    }
+
+    .adalaber-info-container {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        align-items: flex-start;
+    }
+
+    .adalaber-name {
+        text-align: left;
+        margin-top: 30px;
+    }
+
+    .adalaber-name-right {
+        text-align: right;
+        margin-top: 30px;
+        font-family: 'Open-Sans', 'Sans-Serif';
+        font-size: 20px;
+        line-height: 45px;
+        color: black;
+    }
+
+    .adalaber-text {
+        text-align: left;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .adalaber-text-right {
+        text-align: right;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-family: 'Open-Sans', 'Sans-Serif';
+        font-size: 16px;
+        line-height: 24px;
+        color: #54585a;
+    }
+
+    .icons-container {
+        margin-top: 0px;
+    }
+
+    .photo-container {
+        margin-left: 45px;
+        width: 205px;
+        height: 205px;
+        border: 5px solid #e9e9e9;
+    }
+
+    .photo-container-right {
+        margin-right: 45px;
+        margin-top: 45px;
+        width: 205px;
+        height: 205px;
+        border: 5px solid #e9e9e9;
+    }
+
+    .photo {
+        width: 205px;
+        height: 205px;
+    }
+
+    .about-us-title {
+        margin-bottom: 0px;
+    }
+    
+    .adalaber-info-container-right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 15px;
+    }
+
+    /*FOOTER*/
+
+    footer {
+        height: 170px;
+    }
+    .container-footer {
+        align-items: flex-start;
+        margin-left: 45px;
+        margin-bottom: 60px;
+    }
+    .links-footer-list {
+        position: absolute;
+        right: 45px;
+        line-height: 30px;
+        text-align: right;
+        margin-top: 24px;
+    }
+    .logo-adalab {
+        position: relative;
+        left: -10px;
+        margin-top: 15px;
+    }
+
+}
+
+
+
+@media all and (min-width:1200px) {
+
+    /*HEADER*/
+    .mainheader{
+        height: 550px;
+    }
+    .headcontainer{
+        width: 100%;
+        height: 60px;
+        background-color: #099d8d;
+        opacity: 0.95;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .nameandnav{
+        width: 1200px;
+        max-width: 1200px;        
+    }
+    .namegroup{
+        margin-left: 93px;
+        width: 600px;
+        max-width: 1200px;
+    }
+    .nav{
+        margin-right: 97px;
+        width: 600px;
+        max-width: 1200px;
+    }
+    .frontpage{
+        height: 550px;
+    }
+    
+    .claim{
+        height: 60px;
+        margin-left: 138px;
+        max-width: 574px;
+        transform: translate(0px, -90px);
+    }
+    .claim p{
+        margin: 8px 0px;
+    }
+
+    /*TEAM*/
+    
+    .section-title {
+        margin-left: 556px;
+        margin-right: 556px;
+    }
+    
+    .content {
+        width: 601px;
+    }
+    
+    /*STRENGHTS AND WEAKNESSES*/
+
+    .strengths-and-weaknesses {
+        display: flex;
+        flex-direction: row;
+        padding-top: 30px;
+        padding-bottom: 45px;
+      
+        
+    }
+
+    .strengths{
+      margin-left: 138px;
+      margin-right: 45px;
+      flex-basis: 50%;
+  }
+
+  .weaknesses{
+      margin-right: 139px;
+      margin-left: 0px;
+      flex-basis: 50%;
+  }
+
+  .contents{
+      margin:  0px;
+      padding: 0px;
+
+  }
+
+  .contentd{
+    margin: 0px;
+    padding: 0px;
+ }
+
+
+
+
+    
+    
+    /*ADALABERS*/
+
+    #antonella, #ioana, #valeria {
+        display: flex;
+        flex-direction: row;
+        height: 300px;
+    }
+
+    #clarette, #sandra {
+        display: flex;
+        flex-direction: row-reverse;
+        height: 300px;
+    }
+
+    .adalaber-info-container {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        align-items: flex-start;
+    }
+
+    .adalaber-info-container-right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 15px;
+    }
+
+    .adalaber-name {
+        text-align: left;
+        margin-top: 30px;
+    }
+
+    .adalaber-name-right {
+        text-align: right;
+        margin-top: 30px;
+        font-family: 'Open-Sans', 'Sans-Serif';
+        font-size: 20px;
+        line-height: 45px;
+        color: black;
+    }
+
+    .adalaber-text {
+        text-align: left;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-right: 138px;
+    }
+
+    .adalaber-text-right {
+        text-align: right;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 138px;
+        font-family: 'Open-Sans', 'Sans-Serif';
+        font-size: 16px;
+        line-height: 24px;
+        color: #54585a;
+    }
+
+    .photo-container {
+        margin-left: 138px;
+        width: 278px;
+        height: 278px;
+        border: 5px solid #e9e9e9;
+    }
+
+    .photo-container-right {
+        margin-right: 138px;
+        margin-top: 45px;
+        width: 278px;
+        height: 278px;
+        border: 5px solid #e9e9e9;
+    }
+
+    .photo {
+        width: 278px;
+        height: 278px;
+    }
+
+    .about-us-title {
+        margin-bottom: 0px;
+    }
+
+    /*FOOTER*/
+
+    footer {
+        height: 161px;
+     }
+     .container-footer {
+         align-items: flex-start;
+         margin-left: 138px;
+     }
+     .links-footer-list {
+         position: absolute;
+         right: 138px;
+         margin-top: 24px;
+     }
+}
