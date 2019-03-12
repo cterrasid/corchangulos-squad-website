@@ -82,9 +82,6 @@ body{
     
 }
 
-
-
-
 /*CSS TEAM*/
 
 .section-main {
@@ -104,13 +101,6 @@ body{
     margin-bottom: 0px;
     color: #14d9c4;
     letter-spacing: 1px;
-}
-
-.content-main {
-    font-family: 'Open-Sans', 'Sans-Serif';
-    font-size: 16px;
-    padding: 15px;
-    color: #54585a;
 }
   
 .link {
@@ -426,16 +416,11 @@ footer {
     .section-title {
         line-height: 1.88;
         margin-top: 45px;
-        
     }
     
     .content {
-        margin-bottom: 60px;
-        margin-top: 15px;
-        margin-left: 45px;
-        margin-right: 45px;
+        margin: 15px 45px 60px 45px;
         line-height: 24px;
-
     }
 
     /*STRENGHTS AND WEAKNESSES*/
@@ -650,7 +635,7 @@ footer {
     }
     
     .content {
-        width: 601px;
+        margin: 0 25% 60px 25%;
     }
     
     /*STRENGHTS AND WEAKNESSES*/
