@@ -174,6 +174,7 @@ body{
 
 #about-us {
     margin-bottom: 60px;
+    box-sizing: border-box;
 }
 
 /* Photos */
@@ -688,6 +689,7 @@ footer {
         display: flex;
         flex-direction: column;
         margin: 0 auto;
+        margin-bottom: 60px;
     }
     
     #antonella, #ioana, #valeria {
@@ -769,7 +771,7 @@ footer {
     }
 
     .about-us-title {
-        margin-bottom: 0px;
+        margin: 2em 0px 2em 0px;
     }
 
     /*FOOTER*/
