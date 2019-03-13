@@ -88,14 +88,14 @@ body{
 
 /*CSS TEAM*/
 
-.section-main {
+.section__main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
 }
 
-.section-title {
+.section__title {
     font-family: 'Rubik', 'Sans-Serif';
     font-size: 24px;
     font-weight: 500px;
@@ -106,13 +106,8 @@ body{
     color: #14d9c4;
     letter-spacing: 1px;
 }
-  
-.link {
-     color:  #14d9c4;
-     text-decoration: none;
-}
 
-.content {
+.section__content {
     text-align: center;
     margin: 15px;
     font-family: 'Open-Sans', 'Sans-Serif';
@@ -419,12 +414,12 @@ footer {
 
     /*TEAM*/
 
-    .section-title {
+    .section__title {
         line-height: 1.88;
         margin-top: 45px;
     }
     
-    .content {
+    .section__content {
         margin: 15px 45px 60px 45px;
         line-height: 24px;
     }
@@ -635,12 +630,13 @@ footer {
 
     /*TEAM*/
     
-    .section-title {
+    .section__title {
         margin-left: 556px;
         margin-right: 556px;
     }
     
-    .content {
+    .section__content {
+        width: 1200px;
         margin: 0 25% 60px 25%;
     }
     
