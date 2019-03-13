@@ -9,13 +9,15 @@ body{
 /*CSS HEADER*/
 
 .nameandnav {
-    position: absolute;
+    position: fixed;
     width: 100%;
+    z-index:1;
 }
 
 .mainheader{
     height: 467px;
 }
+
 
 .namegroup{
     height: 60px;
@@ -40,7 +42,7 @@ body{
     justify-content: center;
 }
 
-.navlist{   
+.nav__list{   
     width: 100%;
     list-style: none;
     padding: 0px;
@@ -50,7 +52,7 @@ body{
     letter-spacing: 1px;
 }
 
-.linksheader{
+.links__header{
     height: 30px;
     color: white;
     font-family: 'Rubik', sans-serif;
@@ -79,7 +81,9 @@ body{
     text-align: center;
     transform: translate(0px, -39px);
     letter-spacing: 1px;
-    
+}
+.claim p{
+    margin:0px;
 }
 
 /*CSS TEAM*/
@@ -380,7 +384,7 @@ footer {
         flex-direction: row;
         opacity: 0.7;
         background-color: #099d8d;
-        position: absolute;
+        position: fixed;
     }
     .namegroup{
         width: 50%;
@@ -406,9 +410,6 @@ footer {
         margin-left: 45px;
         opacity: 0.7;
         transform: translate(0px, -80px);
-    }
-    .claim p{
-        margin:15px 0px;
     }
 
     /*TEAM*/
@@ -594,7 +595,7 @@ footer {
         height: 60px;
         background-color: #099d8d;
         opacity: 0.95;
-        position: absolute;
+        position: fixed;
         display: flex;
         justify-content: center;
     }
