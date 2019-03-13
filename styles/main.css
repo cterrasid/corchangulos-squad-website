@@ -679,6 +679,13 @@ footer {
     
     /*ADALABERS*/
 
+    #about-us {
+        max-width: 1200px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    
     #antonella, #ioana, #valeria {
         display: flex;
         flex-direction: row;
