@@ -1,14 +1,19 @@
-/*CSS FOOTER*/
-
-
 footer {
     border-top: 1px solid $colorTextPrimary;
     height: 250px;
+    @media all and (min-width:768px){
+            height: 170px;
+    }
 }
 .footer__container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media all and (min-width:768px) {
+            align-items: flex-start;
+            margin-left: 45px;
+            margin-bottom: 60px;
+    }
 }
 .copyright {
     font-family: $fontContent;
@@ -28,6 +33,13 @@ footer {
     padding: 0px;
     margin-top: 20px;
     margin-bottom: 0px;
+    @media all and (min-width:768px){
+            position: absolute;
+            right: 45px;
+            line-height: 30px;
+            text-align: right;
+            margin-top: 24px;
+    }
 }
 .footer__list--link {
     color: $colorTextSecundary;
@@ -41,22 +53,6 @@ footer {
 }
 
 @media all and (min-width:768px){
-    
-    footer {
-        height: 170px;
-    }
-    .footer__container {
-        align-items: flex-start;
-        margin-left: 45px;
-        margin-bottom: 60px;
-    }
-    .footer__list {
-        position: absolute;
-        right: 45px;
-        line-height: 30px;
-        text-align: right;
-        margin-top: 24px;
-    }
     .logo-adalab {
         position: relative;
         left: -10px;
