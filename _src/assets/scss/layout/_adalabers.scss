@@ -1,5 +1,7 @@
 /*CSS ADALABERS*/
 
+/* MOBILE*/
+
 #about-us {
     margin-bottom: 60px;
     box-sizing: border-box;
@@ -72,9 +74,7 @@
 }
 
 
-
-
-
+/*INFO__CONTAINER*/
 
 
 .adalaber__info-container {
@@ -83,6 +83,19 @@
     align-items: center;
     padding: 15px;
 
+    @media all and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        align-items: flex-start;
+    }
+
+    @media all and (min-width: 1200px) {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        align-items: flex-start;
+    }
 }
 
 .adalaber__info-container--right {
@@ -90,6 +103,20 @@
     flex-direction: column;
     align-items: center;
     padding: 15px;
+
+    @media all and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 15px;
+    }
+
+    @media all and (min-width: 1200px) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 15px;
+    }
 
 }
 
@@ -200,6 +227,8 @@
 
     /*ADALABERS*/
 
+    /*TABLET*/
+
     #antonella, #ioana, #valeria {
         display: flex;
         flex-direction: row;
@@ -213,10 +242,7 @@
     }
 
     .adalaber__info-container {
-        display: flex;
-        flex-direction: column;
-        padding: 15px;
-        align-items: flex-start;
+        
     }
 
     .adalaber__name {
@@ -262,13 +288,12 @@
     }
     
     .adalaber__info-container--right {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        padding: 15px;
+        
     }
 
-     /*ADALABERS*/
+     /*ADALABERS */ 
+
+     /*ORDENADOR*/
 
      #about-us {
         max-width: 1200px;
@@ -291,17 +316,11 @@
     }
 
     .adalaber__info-container {
-        display: flex;
-        flex-direction: column;
-        padding: 15px;
-        align-items: flex-start;
+
     }
 
     .adalaber__info-container--right {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        padding: 15px;
+        
     }
 
     .adalaber__name {
