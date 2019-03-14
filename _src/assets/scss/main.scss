@@ -179,6 +179,7 @@ body{
 #about-us {
     margin-bottom: 60px;
     box-sizing: border-box;
+    max-width: 1200px;
 }
 
 /* Photos */
@@ -487,7 +488,7 @@ footer {
     #clarette, #sandra {
         display: flex;
         flex-direction: row-reverse;
-        height: 300px;
+        height: 300px;    
     }
 
     .adalaber-info-container {
@@ -540,10 +541,10 @@ footer {
 
     .photo-container-right {
         margin-right: 45px;
-        margin-top: 45px;
         width: 205px;
         height: 205px;
         border: 5px solid #e9e9e9;
+
     }
 
     .photo {
@@ -760,7 +761,6 @@ footer {
 
     .photo-container-right {
         margin-right: 138px;
-        margin-top: 45px;
         width: 278px;
         height: 278px;
         border: 5px solid #e9e9e9;
