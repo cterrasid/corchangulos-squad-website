@@ -179,6 +179,7 @@ body{
 #about-us {
     margin-bottom: 60px;
     box-sizing: border-box;
+    max-width: 1200px;
 }
 
 /* Photos */
@@ -333,7 +334,7 @@ footer {
     border-top: 1px solid #b8b8b9;
     height: 250px;
 }
-.container-footer {
+.footer__container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -350,14 +351,14 @@ footer {
     height: 45px;
     margin-top: 30px;
 }
-.links-footer-list{
+.footer__list {
     text-align: center;
     list-style: none;
     padding: 0px;
     margin-top: 20px;
     margin-bottom: 0px;
 }
-.links-footer {
+.footer__list--link {
     color: #54585a;
     font-size: 14px;
     opacity: 0.75;
@@ -488,7 +489,7 @@ footer {
     #clarette, #sandra {
         display: flex;
         flex-direction: row-reverse;
-        height: 300px;
+        height: 300px;    
     }
 
     .adalaber-info-container {
@@ -541,10 +542,10 @@ footer {
 
     .photo-container-right {
         margin-right: 45px;
-        margin-top: 45px;
         width: 205px;
         height: 205px;
         border: 5px solid #e9e9e9;
+
     }
 
     .photo {
@@ -568,12 +569,12 @@ footer {
     footer {
         height: 170px;
     }
-    .container-footer {
+    .footer__container {
         align-items: flex-start;
         margin-left: 45px;
         margin-bottom: 60px;
     }
-    .links-footer-list {
+    .footer__list {
         position: absolute;
         right: 45px;
         line-height: 30px;
@@ -768,7 +769,6 @@ footer {
 
     .photo-container-right {
         margin-right: 138px;
-        margin-top: 45px;
         width: 278px;
         height: 278px;
         border: 5px solid #e9e9e9;
@@ -788,11 +788,11 @@ footer {
     footer {
         height: 161px;
      }
-     .container-footer {
+     .footer__container {
          align-items: flex-start;
          margin-left: 138px;
      }
-     .links-footer-list {
+     .footer__list {
          position: absolute;
          right: 138px;
          margin-top: 24px;
