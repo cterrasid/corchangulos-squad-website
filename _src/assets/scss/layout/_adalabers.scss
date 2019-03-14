@@ -6,6 +6,14 @@
     margin-bottom: 60px;
     box-sizing: border-box;
     max-width: 1200px;
+
+    @media all and (min-width: 768px) {
+        max-width: 1200px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        margin-bottom: 60px;
+    }
 }
 
 #antonella, #ioana, #valeria {
@@ -153,7 +161,12 @@
 }
 
 /*Icons*/
+.icons__container {
 
+    @media all and (min-width: 1200px) {
+    margin-top: 0px;
+    }
+}
 
 .icons__ul {
     width: 100vw;
@@ -282,6 +295,20 @@
     box-sizing: border-box;   
     margin-top: 0px;
     margin-bottom: 0px;
+
+    @media all and (min-width: 768px) {
+        text-align: left;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-right: 50px;
+    }
+
+    @media all and (min-width: 1200px) {
+        text-align: left;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-right: 138px;
+    }
 }
 
 .adalaber__text--right {
@@ -293,34 +320,8 @@
     box-sizing: border-box;   
     margin-top: 0px;
     margin-bottom: 0px;
-}
 
-    /*ADALABERS*/
-
-    /*TABLET*/
-
-
-
-    .adalaber__info-container {
-        
-    }
-
-    .adalaber__name {
-        
-    }
-
-    .adalaber__name--right {
-        
-    }
-
-    .adalaber__text {
-        text-align: left;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        padding-right: 50px;
-    }
-
-    .adalaber__text--right {
+    @media all and (min-width: 768px) {
         text-align: right;
         margin-top: 0px;
         margin-bottom: 0px;
@@ -331,63 +332,7 @@
         padding-left: 50px;
     }
 
-    .icons__container {
-        margin-top: 0px;
-    }
-
-    
-
-    .about-us__title {
-    }
-    
-    .adalaber__info-container--right {
-        
-    }
-
-     /*ADALABERS */ 
-
-     /*ORDENADOR*/
-
-     #about-us {
-        max-width: 1200px;
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-        margin-bottom: 60px;
-    }
-    
-    #antonella, #ioana, #valeria {
-        
-    }
-
-    #clarette, #sandra {
-        
-    }
-
-    .adalaber__info-container {
-
-    }
-
-    .adalaber__info-container--right {
-        
-    }
-
-    .adalaber__name {
-        
-    }
-
-    .adalaber__name--right {
-        
-    }
-
-    .adalaber__text {
-        text-align: left;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        margin-right: 138px;
-    }
-
-    .adalaber__text--right {
+    @media all and (min-width: 1200px) {
         text-align: right;
         margin-top: 0px;
         margin-bottom: 0px;
@@ -397,9 +342,8 @@
         line-height: 24px;
         color: #54585a;
     }
+}
+
+    
 
    
-
-    .about-us__title {
-    }
-
