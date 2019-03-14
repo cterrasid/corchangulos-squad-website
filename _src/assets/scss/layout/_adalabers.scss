@@ -18,6 +18,9 @@
 
 #antonella, #ioana, #valeria {
 
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,9 +41,20 @@
 }
 
 #clarette, #sandra {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media all and (min-width: 768px) {
     display: flex;
     flex-direction: row-reverse;
-    height: 300px;    
+    height: 300px;
+
+    }
 
     @media all and (min-width: 1200px) {
         display: flex;
@@ -160,7 +174,47 @@
 
 }
 
-/*Icons*/
+/*Icons
+
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+.items {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  margin-bottom: 40px;
+}
+.item {
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  margin: 0 20px;
+  position: relative;
+}
+
+.item::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+/*.item:not(:first-child)::after {
+    content: "";
+    background-color: fuchsia;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+*/
 .icons__container {
 
     @media all and (min-width: 1200px) {
