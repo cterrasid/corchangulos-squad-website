@@ -11,7 +11,7 @@ body{
 .nameandnav {
     position: fixed;
     width: 100%;
-    z-index:1;
+    z-index:5;
 }
 
 .mainheader{
@@ -390,6 +390,7 @@ footer {
         opacity: 0.7;
         background-color: #099d8d;
         position: fixed;
+        z-index:5;
     }
     .namegroup{
         width: 50%;
@@ -609,6 +610,7 @@ footer {
         position: fixed;
         display: flex;
         justify-content: center;
+        z-index: 5;
     }
     
     .nameandnav{
@@ -628,12 +630,18 @@ footer {
     .frontpage{
         height: 550px;
     }
+
+    .centerclaim{
+        width: 1200px;
+        margin:0 auto;
+        transform: translate(0px, -90px);
+    }
     
     .claim{
         height: 60px;
         margin-left: 138px;
         max-width: 574px;
-        transform: translate(0px, -90px);
+        transform: translate(0px, 0px);
     }
     .claim p{
         margin: 8px 0px;
