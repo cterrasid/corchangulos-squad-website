@@ -1,0 +1,81 @@
+/*CSS FOOTER*/
+
+
+footer {
+    border-top: 1px solid $colorTextPrimary;
+    height: 250px;
+}
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.copyright {
+    font-family: $fontContent;
+    font-size: 14px;
+    color: $colorTextPrimary;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+.logo-adalab {
+    width: 115.9px;
+    height: 45px;
+    margin-top: 30px;
+}
+.footer__list {
+    text-align: center;
+    list-style: none;
+    padding: 0px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+.footer__list--link {
+    color: $colorTextSecundary;
+    font-size: 14px;
+    opacity: 0.75;
+    line-height: 1.43;
+    font-weight: 550;
+    font-family: $fontTitle;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+@media all and (min-width:768px){
+    
+    footer {
+        height: 170px;
+    }
+    .footer__container {
+        align-items: flex-start;
+        margin-left: 45px;
+        margin-bottom: 60px;
+    }
+    .footer__list {
+        position: absolute;
+        right: 45px;
+        line-height: 30px;
+        text-align: right;
+        margin-top: 24px;
+    }
+    .logo-adalab {
+        position: relative;
+        left: -10px;
+        margin-top: 15px;
+    }
+}
+
+@media all and (min-width:1200px) {
+
+    footer {
+        height: 161px;
+    }
+     .footer__container {
+         align-items: flex-start;
+         margin-left: 138px;
+    }
+     .footer__list {
+         position: absolute;
+         right: 138px;
+         margin-top: 24px;
+    }
+}
