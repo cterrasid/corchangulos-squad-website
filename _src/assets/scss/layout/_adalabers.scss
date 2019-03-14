@@ -8,6 +8,38 @@
     max-width: 1200px;
 }
 
+#antonella, #ioana, #valeria {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media all and (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        height: 300px;
+    }
+
+    @media all and (min-width: 1200px) {
+        display: flex;
+        flex-direction: row;
+        height: 300px;
+    }
+    
+}
+
+#clarette, #sandra {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 300px;    
+
+    @media all and (min-width: 1200px) {
+        display: flex;
+        flex-direction: row-reverse;
+        height: 300px;
+    }
+}
 
 
 /* Photos */
@@ -120,6 +152,9 @@
 
 }
 
+/*Icons*/
+
+
 .icons__ul {
     width: 100vw;
     max-width: 124px;
@@ -127,9 +162,8 @@
     list-style: none;
     display: flex;
     justify-content: space-between;
-
-
 }
+
 
 .icon--first {
     flex-basis: 19%;
@@ -181,6 +215,14 @@
     margin-bottom: 30px;
     text-align: center;
     letter-spacing: 1px;
+
+    @media all and (min-width: 768px) {
+        margin-bottom: 0px;
+    }
+
+    @media all and (min-width: 1200px) {
+        margin: 2em 0px 2em 0px;
+    }
 }
 
 .adalaber__name {
@@ -191,6 +233,16 @@
     text-align: center;
     margin-bottom: 0px;
     margin-top: 10px;
+
+    @media all and (min-width: 768px) {
+        text-align: left;
+        margin-top: 30px;
+    }
+
+    @media all and (min-width: 1200px) {
+        text-align: left;
+        margin-top: 30px;
+    }
 }
 
 .adalaber__name--right {
@@ -201,6 +253,24 @@
     text-align: center;
     margin-bottom: 0px;
     margin-top: 10px;
+
+    @media all and (min-width: 768px) {
+        text-align: right;
+        margin-top: 30px;
+        font-family: 'Open-Sans', 'Sans-Serif';
+        font-size: 20px;
+        line-height: 45px;
+        color: black;
+    }
+
+    @media all and (min-width: 1200px) {
+        text-align: right;
+        margin-top: 30px;
+        font-family: 'Open-Sans', 'Sans-Serif';
+        font-size: 20px;
+        line-height: 45px;
+        color: black;
+    }
 }
 
 .adalaber__text {
@@ -229,34 +299,18 @@
 
     /*TABLET*/
 
-    #antonella, #ioana, #valeria {
-        display: flex;
-        flex-direction: row;
-        height: 300px;
-    }
 
-    #clarette, #sandra {
-        display: flex;
-        flex-direction: row-reverse;
-        height: 300px;    
-    }
 
     .adalaber__info-container {
         
     }
 
     .adalaber__name {
-        text-align: left;
-        margin-top: 30px;
+        
     }
 
     .adalaber__name--right {
-        text-align: right;
-        margin-top: 30px;
-        font-family: 'Open-Sans', 'Sans-Serif';
-        font-size: 20px;
-        line-height: 45px;
-        color: black;
+        
     }
 
     .adalaber__text {
@@ -284,7 +338,6 @@
     
 
     .about-us__title {
-        margin-bottom: 0px;
     }
     
     .adalaber__info-container--right {
@@ -304,15 +357,11 @@
     }
     
     #antonella, #ioana, #valeria {
-        display: flex;
-        flex-direction: row;
-        height: 300px;
+        
     }
 
     #clarette, #sandra {
-        display: flex;
-        flex-direction: row-reverse;
-        height: 300px;
+        
     }
 
     .adalaber__info-container {
@@ -324,17 +373,11 @@
     }
 
     .adalaber__name {
-        text-align: left;
-        margin-top: 30px;
+        
     }
 
     .adalaber__name--right {
-        text-align: right;
-        margin-top: 30px;
-        font-family: 'Open-Sans', 'Sans-Serif';
-        font-size: 20px;
-        line-height: 45px;
-        color: black;
+        
     }
 
     .adalaber__text {
@@ -358,6 +401,5 @@
    
 
     .about-us__title {
-        margin: 2em 0px 2em 0px;
     }
 
