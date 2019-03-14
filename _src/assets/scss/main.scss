@@ -124,63 +124,8 @@ body{
 
 /*CSS STRENGTHS-WEAKNESSES*/
 
-.strengths-and-weaknesses {
-    width: 100%;
-    background-color: #e9e9e9;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    padding-top: 30px;
-    padding-bottom: 45px;
-    color: #b8b8b9;
-}
+@import 'layout/sw';
 
-.content-strenghts {
-    margin: 15px;
-    font-family: 'Open-Sans', 'Sans-Serif';
-    color: #54585a;
-    line-height: 24px;
-    flex-basis: 50%;
-    margin-top: 0px;
-    margin-bottom: 30px;
-    font-size: 16px;
- 
-    
-}
-
-.content {
-    margin-bottom: 0px;
-}
-
-.subtitle { 
-  color: #099d8d;
-  font-family: 'Rubik', 'Sans-Serif';
-  font-size: 21px;
-  font-weight: 600;
-  text-align: center;
-  letter-spacing: 0.5px;
-  line-height: 2.05;
-  margin-bottom: 5px;
-  margin-top: 0px;
-
-}
-
-.square {
-    background-color: white;
-    height: 30px;
-    width: 30px;
-    position: absolute;
-    left: 50%;
-    transform: translate(-15px,-15px) rotate(45deg);
-}
-
-/*CSS ADALABERS*/
-
-#about-us {
-    margin-bottom: 60px;
-    box-sizing: border-box;
-    max-width: 1200px;
-}
 
 /* Photos */
 
@@ -439,47 +384,7 @@ footer {
 
     /*STRENGHTS AND WEAKNESSES*/
 
-    .strengths-and-weaknesses {
-        width: 100vw;
-        background-color: #e9e9e9;
-        text-align: center;
-        display: flex;
-        flex-direction: row;
-        padding-bottom: 60px;
-        justify-content: space-around;
-        background-color: #e9e9e9;
-        box-sizing: border-box;
-        align-items: baseline;
-        padding-top: 45px;
-        align-content: center;
-    }
-
-    .strengths{
-        
-        flex-basis: 50%;
-    }
-  
-    .weaknesses{
-        
-        flex-basis: 50%;
-    }
-    .subtitle{
-        margin-bottom: 15px;
-    }
-    .contents{
-        margin-bottom: 0px;
-        margin-left: 45px;
-        padding-right: 15px;
-        margin-right: 15px;
-        vertical-align: center;
-    }
-
-    .contentd{
-        margin-right: 45px;
-        margin-left: 0px;
-        padding-left: 15px;
-        margin-left: 0px;
-    }
+    
     
    
         
@@ -663,39 +568,7 @@ footer {
       
     /*STRENGHTS AND WEAKNESSES*/
 
-    .strengths-and-weaknesses {
-        display: flex;
-        flex-direction: row;
-        padding-top: 30px;
-        padding-bottom: 45px;
-      
-        
-    }
-
-    .strengths{
-      margin-left: 138px;
-      margin-right: 45px;
-      flex-basis: 50%;
-  }
-
-  .weaknesses{
-      margin-right: 139px;
-      margin-left: 0px;
-      flex-basis: 50%;
-  }
-
-  .contents{
-      margin:  0px;
-      padding: 0px;
-
-  }
-
-  .contentd{
-    margin: 0px;
-    padding: 0px;
- }
-
-
+    
 
 
     
