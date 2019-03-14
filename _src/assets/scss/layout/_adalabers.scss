@@ -1,3 +1,5 @@
+@import 'core/variable';
+
 /*SECTION TITLE*/
 
 #about-us {
@@ -14,11 +16,11 @@
     }
 
     .about-us__title {
-        font-family: 'Rubik', 'Sans-Serif';
+        font-family: $fontTitle;
         font-weight: 700;
-        font-size: 24px;
-        line-height: 45px;
-        color: #099d8d;
+        font-size: $fontTitleSize;
+        line-height: $lineHeightTitle;
+        color: $colorPrimary;
         text-transform: uppercase;
         margin: 30px 0 30px 0;
         text-align: center;
@@ -92,21 +94,19 @@
     height: 180px;
     width: 180px;
     border-radius: 4px;
-    border: solid 5px #e9e9e9;
+    border: solid 5px $colorTextPrimary;
     margin: auto;
 
     @media all and (min-width: 768px) {
-        margin-left: 45px;
+        margin-left: $lineHeightTitle;
         width: 205px;
         height: 205px;
-        border: 5px solid #e9e9e9;
     }
 
     @media all and (min-width: 1200px) {
         margin-left: 138px;
         width: 278px;
         height: 278px;
-        border: 5px solid #e9e9e9;
     }
 }
 
@@ -115,21 +115,19 @@
     height: 180px;
     width: 180px;
     border-radius: 4px;
-    border: solid 5px #e9e9e9;
+    border: solid 5px $colorTextPrimary;
     margin: auto;
 
     @media all and (min-width: 768px) {
         margin-right: 45px;
         width: 205px;
         height: 205px;
-        border: 5px solid #e9e9e9;
     }
 
     @media all and (min-width: 1200px) {
         margin-right: 138px;
         width: 278px;
         height: 278px;
-        border: 5px solid #e9e9e9;
     }
 }
 
@@ -172,9 +170,9 @@
     }
 
     .adalaber__name {
-        font-family: 'Open-Sans', 'Sans-Serif';
+        font-family: $fontContent;
         font-size: 20px;
-        line-height: 45px;
+        line-height: $lineHeightTitle;
         color: black;
         text-align: center;
         margin-bottom: 0px;
@@ -193,10 +191,10 @@
     
     .adalaber__text {
         text-align: center;
-        font-family: 'Open-Sans', 'Sans-Serif';
-        font-size: 16px;
-        line-height: 24px;
-        color: #54585a;
+        font-family: $fontContent;
+        font-size: $fontMainContent;
+        line-height: $lineHeightContent;
+        color: $colorTextSecondary;
         box-sizing: border-box;   
         margin-top: 0px;
         margin-bottom: 0px;
@@ -238,9 +236,8 @@
     }
 
     .adalaber__name--right {
-        font-family: 'Open-Sans', 'Sans-Serif';
-        font-size: 20px;
-        line-height: 45px;
+        font-family: $fontContent;        font-size: 20px;
+        line-height: $lineHeightTitle;
         color: black;
         text-align: center;
         margin-bottom: 0px;
@@ -249,28 +246,25 @@
         @media all and (min-width: 768px) {
             text-align: right;
             margin-top: 30px;
-            font-family: 'Open-Sans', 'Sans-Serif';
-            font-size: 20px;
-            line-height: 45px;
+            font-family: $fontContent;          font-size: 20px;
+            line-height: $lineHeightTitle;
             color: black;
         }
     
         @media all and (min-width: 1200px) {
             text-align: right;
             margin-top: 30px;
-            font-family: 'Open-Sans', 'Sans-Serif';
-            font-size: 20px;
-            line-height: 45px;
+            font-family: $fontContent;          font-size: 20px;
+            line-height: $lineHeightTitle;
             color: black;
         }
     }
     
     .adalaber__text--right {
         text-align: center;
-        font-family: 'Open-Sans', 'Sans-Serif';
-        font-size: 16px;
-        line-height: 24px;
-        color: #54585a;
+        font-family: $fontContent;        font-size: $fontMainContent;
+        line-height: $lineHeightContent;
+        color: $colorTextSecondary;
         box-sizing: border-box;   
         margin-top: 0px;
         margin-bottom: 0px;
@@ -279,10 +273,9 @@
             text-align: right;
             margin-top: 0px;
             margin-bottom: 0px;
-            font-family: 'Open-Sans', 'Sans-Serif';
-            font-size: 16px;
-            line-height: 24px;
-            color: #54585a;
+            font-family: $fontContent;          font-size: $fontMainContent;
+            line-height: $lineHeightContent;
+            color: $colorTextSecondary;
             padding-left: 50px;
         }
     
@@ -291,10 +284,9 @@
             margin-top: 0px;
             margin-bottom: 0px;
             margin-left: 138px;
-            font-family: 'Open-Sans', 'Sans-Serif';
-            font-size: 16px;
-            line-height: 24px;
-            color: #54585a;
+            font-family: $fontContent;          font-size: $fontMainContent;
+            line-height: $lineHeightContent;
+            color: $colorTextSecondary;
         }
     }
 
@@ -317,7 +309,7 @@
           margin: 0;
           position: relative;
           .fab, .fas {
-            color: #099d8d;
+            color: $colorPrimary;
           }
       }
   
