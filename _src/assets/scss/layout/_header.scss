@@ -130,7 +130,23 @@
     }
 }
 
-.containerclaim{
+.hero__contact{
+    height: 300px;
+    background-image: url(../images/hero3.jpg);   
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @media all and (min-width:768px){
+        height: 421px;
+    }
+
+    @media all and (min-width:1200px){
+        height: 550px;
+    }
+}
+
+.centerclaim{
 
     @media all and (min-width:1200px){
 
