@@ -1,0 +1,289 @@
+@import 'core/variable';
+
+/*SECTION TITLE*/
+
+#about-us {
+    margin-bottom: 60px;
+    box-sizing: border-box;
+    max-width: 1200px;
+
+    @media all and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        margin-bottom: 60px;
+    }
+
+    .about-us__title {
+        font-family: $fontTitle;
+        font-weight: 700;
+        font-size: $fontTitleSize;
+        line-height: $lineHeightTitle;
+        color: $colorPrimary;
+        text-transform: uppercase;
+        margin: 30px 0 30px 0;
+        text-align: center;
+        letter-spacing: 1px;
+    
+        @media all and (min-width: 768px) {
+            margin-bottom: 0px;
+        }
+    
+        @media all and (min-width: 1200px) {
+            margin: 2em 0px 2em 0px;
+        }
+    }
+}
+
+
+/*ADALABERS*/
+
+#antonella, #ioana, #valeria {
+
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media all and (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        height: 300px;
+    }
+    
+}
+
+#clarette, #sandra {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media all and (min-width: 768px) {
+        display: flex;
+        flex-direction: row-reverse;
+        height: 300px;
+
+    }
+
+}
+
+
+/*PHOTOS*/
+
+.photo__container {
+    box-sizing: content-box;
+    height: 180px;
+    width: 180px;
+    border-radius: 4px;
+    border: solid 5px $colorTextPrimary;
+    margin: auto;
+
+    @media all and (min-width: 768px) {
+        margin-left: $lineHeightTitle;
+        width: 205px;
+        height: 205px;
+    }
+
+    @media all and (min-width: 1200px) {
+        margin-left: 138px;
+        width: 278px;
+        height: 278px;
+    }
+}
+
+.photo__container--right {
+    box-sizing: content-box;
+    height: 180px;
+    width: 180px;
+    border-radius: 4px;
+    border: solid 5px $colorTextPrimary;
+    margin: auto;
+
+    @media all and (min-width: 768px) {
+        margin-right: 45px;
+        width: 205px;
+        height: 205px;
+    }
+
+    @media all and (min-width: 1200px) {
+        margin-right: 138px;
+        width: 278px;
+        height: 278px;
+    }
+}
+
+.photo {
+    height: 180px;
+    width: 180px;
+
+    @media all and (min-width:768px) {
+        width: 205px;
+        height: 205px;
+    }
+
+    @media all and (min-width:1200px) {
+        width: 278px;
+        height: 278px;
+    }
+}
+
+
+/*TEXT*/
+
+.adalaber__info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+
+    @media all and (min-width: 768px) {
+        align-items: flex-start;
+    }
+
+    @media all and (min-width: 1200px) {
+        align-items: flex-start;
+    }
+
+    .adalaber__name {
+        font-family: $fontContent;
+        font-size: 20px;
+        line-height: $lineHeightTitle;
+        color: black;
+        text-align: center;
+        margin-bottom: 0px;
+        margin-top: 10px;
+    
+        @media all and (min-width: 768px) {
+            text-align: left;
+            margin-top: 30px;
+        }
+    
+    }
+    
+    .adalaber__text {
+        text-align: center;
+        font-family: $fontContent;
+        font-size: $fontMainContent;
+        line-height: $lineHeightContent;
+        color: $colorTextSecondary;
+        box-sizing: border-box;   
+        margin-top: 0px;
+        margin-bottom: 0px;
+    
+        @media all and (min-width: 768px) {
+            text-align: left;
+            padding-right: 50px;
+        }
+    
+        @media all and (min-width: 1200px) {
+            text-align: left;
+            margin-right: 138px;
+        }
+    }
+}
+
+.adalaber__info-container--right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+
+    @media all and (min-width: 768px) {
+        align-items: flex-end;
+    }
+
+    .adalaber__name--right {
+        font-family: $fontContent;        font-size: 20px;
+        line-height: $lineHeightTitle;
+        color: black;
+        text-align: center;
+        margin-bottom: 0px;
+        margin-top: 10px;
+    
+        @media all and (min-width: 768px) {
+            text-align: right;
+            margin-top: 30px;
+        }
+
+    }
+    
+    .adalaber__text--right {
+        text-align: center;
+        font-family: $fontContent;        font-size: $fontMainContent;
+        line-height: $lineHeightContent;
+        color: $colorTextSecondary;
+        box-sizing: border-box;   
+        margin-top: 0px;
+        margin-bottom: 0px;
+    
+        @media all and (min-width: 768px) {
+            text-align: right;
+            padding-left: 50px;
+        }
+    
+        @media all and (min-width: 1200px) {
+            text-align: right;
+            margin-left: 138px;
+        }
+    }
+
+}
+
+
+/*ICONS*/
+
+*::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  .icons__container {
+    margin: 20px 0 40px 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+  
+      .icon {
+          margin: 0;
+          position: relative;
+          .fab, .fas {
+            color: $colorPrimary;
+          }
+      }
+  
+      .icon:first-child {
+          margin-right: 4px;
+      }
+  
+      .icon:not(:first-child) {
+        margin: 0 10px;
+      
+        ::after {
+            content: "";
+            background-color: grey;
+            border-radius: 50%;
+            width: 2px;
+            height: 2px;
+            display: block;
+            position: absolute;
+            left: -10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+      }
+      
+      .visually-hidden {
+          /*https://snook.ca/archives/html_and_css/hiding-content-for-accessibility*/
+         position: absolute !important;
+         height: 1px; width: 1px;
+         overflow: hidden;
+         clip: rect(1px 1px 1px 1px);  /*IE6, IE7 */
+         clip: rect(1px, 1px, 1px, 1px);
+      }
+  }

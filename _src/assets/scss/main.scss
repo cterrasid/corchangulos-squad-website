@@ -86,6 +86,7 @@ body{
     margin:0px;
 }
 
+
 /*CSS TEAM*/
 
 @import 'core/variable';
@@ -143,166 +144,15 @@ body{
     transform: translate(-15px,-15px) rotate(45deg);
 }
 
-/*CSS ADALABERS*/
-
-#about-us {
-    margin-bottom: 60px;
-    box-sizing: border-box;
-    max-width: 1200px;
-}
-
-/* Photos */
-
-.photo__container {
-    box-sizing: content-box;
-    height: 180px;
-    width: 180px;
-    border-radius: 4px;
-    border: solid 5px #e9e9e9;
-    margin: auto;
-}
-
-.photo__container--right {
-    box-sizing: content-box;
-    height: 180px;
-    width: 180px;
-    border-radius: 4px;
-    border: solid 5px #e9e9e9;
-    margin: auto;
-}
-
-.photo {
-    height: 180px;
-    width: 180px;
-}
-
-.adalaber__info-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 15px;
-
-}
-
-.adalaber__info-container--right {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 15px;
-
-}
-
-.icons__ul {
-    width: 100vw;
-    max-width: 124px;
-    padding: 0px;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-
-
-}
-
-.icon--first {
-    flex-basis: 19%;
-}
-
-.icon {
-    flex-basis: 35%;
-    display: flex;
-    justify-content: space-around;
-}
-
-.icon-dot {
-    height: 2px;
-    width: 2px;
-    background-color: #54585a;
-    border-radius: 50%;
-    display: inline-block;
-    align-self: center;
-}
-
-.icon--link {
-    text-decoration: none;
-}
-
-.icon--about-us {
-    margin: 0px;
-    display: block;
-    color: #099d8d;
-}
-
-.visually-hidden {
-    /* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
-   position: absolute !important;
-   height: 1px; width: 1px;
-   overflow: hidden;
-   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-   clip: rect(1px, 1px, 1px, 1px);
-}
-
-/*Text*/
-
-.about-us__title {
-    font-family: 'Rubik', 'Sans-Serif';
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 45px;
-    color: #099d8d;
-    text-transform: uppercase;
-    margin-bottom: 30px;
-    text-align: center;
-    letter-spacing: 1px;
-}
-
-.adalaber__name {
-    font-family: 'Open-Sans', 'Sans-Serif';
-    font-size: 20px;
-    line-height: 45px;
-    color: black;
-    text-align: center;
-    margin-bottom: 0px;
-    margin-top: 10px;
-}
-
-.adalaber__name--right {
-    font-family: 'Open-Sans', 'Sans-Serif';
-    font-size: 20px;
-    line-height: 45px;
-    color: black;
-    text-align: center;
-    margin-bottom: 0px;
-    margin-top: 10px;
-}
-
-.adalaber__text {
-    text-align: center;
-    font-family: 'Open-Sans', 'Sans-Serif';
-    font-size: 16px;
-    line-height: 24px;
-    color: #54585a;
-    box-sizing: border-box;   
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
-.adalaber__text--right {
-    text-align: center;
-    font-family: 'Open-Sans', 'Sans-Serif';
-    font-size: 16px;
-    line-height: 24px;
-    color: #54585a;
-    box-sizing: border-box;   
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
+@import 'layout/adalabers';
 
 /*CSS FOOTER*/
+
 footer {
     border-top: 1px solid #b8b8b9;
     height: 250px;
 }
+
 .footer__container {
     display: flex;
     flex-direction: column;
@@ -453,93 +303,7 @@ footer {
    
         
 
-    /*ADALABERS*/
 
-    #antonella, #ioana, #valeria {
-        display: flex;
-        flex-direction: row;
-        height: 300px;
-    }
-
-    #clarette, #sandra {
-        display: flex;
-        flex-direction: row-reverse;
-        height: 300px;    
-    }
-
-    .adalaber__info-container {
-        display: flex;
-        flex-direction: column;
-        padding: 15px;
-        align-items: flex-start;
-    }
-
-    .adalaber__name {
-        text-align: left;
-        margin-top: 30px;
-    }
-
-    .adalaber__name--right {
-        text-align: right;
-        margin-top: 30px;
-        font-family: 'Open-Sans', 'Sans-Serif';
-        font-size: 20px;
-        line-height: 45px;
-        color: black;
-    }
-
-    .adalaber__text {
-        text-align: left;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        padding-right: 50px;
-    }
-
-    .adalaber__text--right {
-        text-align: right;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        font-family: 'Open-Sans', 'Sans-Serif';
-        font-size: 16px;
-        line-height: 24px;
-        color: #54585a;
-        padding-left: 50px;
-    }
-
-    .icons__container {
-        margin-top: 0px;
-    }
-
-    .photo__container {
-        margin-left: 45px;
-        width: 205px;
-        height: 205px;
-        border: 5px solid #e9e9e9;
-    }
-
-    .photo__container--right {
-        margin-right: 45px;
-        width: 205px;
-        height: 205px;
-        border: 5px solid #e9e9e9;
-
-    }
-
-    .photo {
-        width: 205px;
-        height: 205px;
-    }
-
-    .about-us__title {
-        margin-bottom: 0px;
-    }
-    
-    .adalaber__info-container--right {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        padding: 15px;
-    }
 
     /*FOOTER*/
 
@@ -669,97 +433,7 @@ footer {
 
     
     
-    /*ADALABERS*/
-
-    #about-us {
-        max-width: 1200px;
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-        margin-bottom: 60px;
-    }
-    
-    #antonella, #ioana, #valeria {
-        display: flex;
-        flex-direction: row;
-        height: 300px;
-    }
-
-    #clarette, #sandra {
-        display: flex;
-        flex-direction: row-reverse;
-        height: 300px;
-    }
-
-    .adalaber__info-container {
-        display: flex;
-        flex-direction: column;
-        padding: 15px;
-        align-items: flex-start;
-    }
-
-    .adalaber__info-container--right {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        padding: 15px;
-    }
-
-    .adalaber__name {
-        text-align: left;
-        margin-top: 30px;
-    }
-
-    .adalaber__name--right {
-        text-align: right;
-        margin-top: 30px;
-        font-family: 'Open-Sans', 'Sans-Serif';
-        font-size: 20px;
-        line-height: 45px;
-        color: black;
-    }
-
-    .adalaber__text {
-        text-align: left;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        margin-right: 138px;
-    }
-
-    .adalaber__text--right {
-        text-align: right;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        margin-left: 138px;
-        font-family: 'Open-Sans', 'Sans-Serif';
-        font-size: 16px;
-        line-height: 24px;
-        color: #54585a;
-    }
-
-    .photo__container {
-        margin-left: 138px;
-        width: 278px;
-        height: 278px;
-        border: 5px solid #e9e9e9;
-    }
-
-    .photo__container--right {
-        margin-right: 138px;
-        width: 278px;
-        height: 278px;
-        border: 5px solid #e9e9e9;
-    }
-
-    .photo {
-        width: 278px;
-        height: 278px;
-    }
-
-    .about-us__title {
-        margin: 2em 0px 2em 0px;
-    }
-
+   
     /*FOOTER*/
 
     footer {
