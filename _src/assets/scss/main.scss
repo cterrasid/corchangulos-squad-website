@@ -1,7 +1,5 @@
 
 
-/*layout*/
-
 /*GENERAL*/
 body{
     background-color: white;
@@ -10,7 +8,11 @@ body{
     overflow-x: hidden;
 }
 
-/*CSS HEADER*/
+// Core
+@import 'core/variable';
+
+
+/*layout*/
 @import 'layout/header';
 
 /*CSS TEAM*/
