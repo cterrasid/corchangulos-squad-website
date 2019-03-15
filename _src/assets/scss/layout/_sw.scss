@@ -1,25 +1,24 @@
 .strengths-and-weaknesses {
     width: 100%;
-    background-color: #e9e9e9;
+    background-color: $colorBackground;
     text-align: center;
     display: flex;
     flex-direction: column;
     padding-top: 30px;
     padding-bottom: 45px;
-    color: #b8b8b9;
+    color: $colorTextPrimary;
 }
 
 .content-strenghts {
     margin: 15px;
-    font-family: 'Open-Sans', 'Sans-Serif';
-    color: #54585a;
+    font-family: $fontContent;
+    color: $colorTextSecondary;
     line-height: 24px;
     flex-basis: 50%;
     margin-top: 0px;
     margin-bottom: 30px;
-    font-size: 16px;
- 
-    
+    font-size: $fontMainContent;
+   
 }
 
 .content {
@@ -27,8 +26,8 @@
 }
 
 .subtitle {
-  color: #099d8d;
-  font-family: 'Rubik', 'Sans-Serif';
+  color: $colorPrimary;
+  font-family: $fontTitle;
   font-size: 21px;
   font-weight: 600;
   text-align: center;
@@ -40,7 +39,7 @@
 }
 
 .square {
-    background-color: white;
+    background-color: $colorBackground;
     height: 30px;
     width: 30px;
     position: absolute;
@@ -52,13 +51,14 @@
 
     .strengths-and-weaknesses {
         width: 100vw;
-        background-color: #e9e9e9;
+        background-color: 
+        $colorBackground;
         text-align: center;
         display: flex;
         flex-direction: row;
         padding-bottom: 60px;
         justify-content: space-around;
-        background-color: #e9e9e9;
+        background-color: $colorBackground;
         box-sizing: border-box;
         align-items: baseline;
         padding-top: 45px;
@@ -101,7 +101,7 @@
         flex-direction: row;
         padding-top: 30px;
         padding-bottom: 45px;
-      
+     
         
     }
 
