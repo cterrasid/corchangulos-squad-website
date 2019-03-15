@@ -27,9 +27,9 @@
 
 .section__title {
     font-family: $fontTitle;
-    font-size: 24px;
+    font-size: $fontTitleSize;
     font-weight: 500px;
-    line-height: 45px;
+    line-height: $lineHeightTitle;
     text-transform: uppercase;
     margin: 30px 0 0 0;
     color: $colorSecundary;
