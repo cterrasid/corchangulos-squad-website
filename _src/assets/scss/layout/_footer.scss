@@ -1,8 +1,11 @@
-footer {
+.footer {
     border-top: 1px solid $colorTextPrimary;
     height: 250px;
     @media all and (min-width:768px){
-            height: 170px;
+        height: 170px;
+    }
+    @media all and (min-width:1200px) {
+        height: 161px;
     }
 }
 .footer__container {
@@ -10,9 +13,13 @@ footer {
     flex-direction: column;
     align-items: center;
     @media all and (min-width:768px) {
-            align-items: flex-start;
-            margin-left: 45px;
-            margin-bottom: 60px;
+        align-items: flex-start;
+        margin-left: 45px;
+        margin-bottom: 60px;
+    }
+    @media all and (min-width:1200px) {
+        align-items: flex-start;
+        margin-left: 138px;
     }
 }
 .copyright {
@@ -26,6 +33,13 @@ footer {
     width: 115.9px;
     height: 45px;
     margin-top: 30px;
+    
+    @media all and (min-width:768px){
+        position: relative;
+        left: -10px;
+        margin-top: 15px;
+        
+    }
 }
 .footer__list {
     text-align: center;
@@ -40,6 +54,11 @@ footer {
             text-align: right;
             margin-top: 24px;
     }
+    @media all and (min-width:1200px) {
+             position: absolute;
+             right: 138px;
+             margin-top: 24px;
+    }
 }
 .footer__list--link {
     color: $colorTextSecundary;
@@ -50,28 +69,4 @@ footer {
     font-family: $fontTitle;
     text-transform: uppercase;
     text-decoration: none;
-}
-
-@media all and (min-width:768px){
-    .logo-adalab {
-        position: relative;
-        left: -10px;
-        margin-top: 15px;
-    }
-}
-
-@media all and (min-width:1200px) {
-
-    footer {
-        height: 161px;
-    }
-     .footer__container {
-         align-items: flex-start;
-         margin-left: 138px;
-    }
-     .footer__list {
-         position: absolute;
-         right: 138px;
-         margin-top: 24px;
-    }
 }
