@@ -1,16 +1,5 @@
 /*CSS HEADER*/
 
-.mainheader{
-    height: 467px;
-
-    @media all and (min-width:768px){
-        height: 421px;
-    }
-
-    @media all and (min-width:1200px){
-        height: 550px;
-    }
-}
 
 .headcontainer{
     @media all and (min-width:1200px){
@@ -150,9 +139,8 @@
 .centerclaim{
 
     @media all and (min-width:1200px){
-
-        max-width: 1200px;
-        margin: auto;
+        position: absolute;
+        right: 50%;
         transform: translate(0px, -90px);
         
     }
