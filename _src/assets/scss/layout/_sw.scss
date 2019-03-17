@@ -1,15 +1,52 @@
-.strengths-and-weaknesses {
-    width: 100%;
+.square {
     background-color: $colorBackground;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-15px,-15px) rotate(45deg);
+    z-index: 1;
+}
+
+.section_strenghts-weaknesses {
+    margin-bottom: 0px;
+    background-color: rgba(170, 167, 166, 0.2)
+ 
+}
+
+
+.main__container {
+    width: 100%;
+    
+    opacity: none;
     text-align: center;
     display: flex;
     flex-direction: column;
     padding-top: 30px;
     padding-bottom: 45px;
-    color: $colorTextPrimary;
+    color:  $colorBackground;
+    justify-content: center;
+
+    @media all and (min-width:768px){
+        width: 100vw;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+
+    }
+
+    @media all and (min-width:1200px) {
+        display: flex;
+        flex-direction: row;
+        padding-top: 30px;
+        padding-bottom: 45px;
+                      
+    }
+
 }
 
-.content-strenghts {
+.container_content{
     margin: 15px;
     font-family: $fontContent;
     color: $colorTextSecondary;
@@ -19,113 +56,91 @@
     margin-bottom: 30px;
     font-size: $fontMainContent;
    
-}
+    @media all and (min-width:768px){
 
-.content {
-    margin-bottom: 0px;
-}
+        }
 
-.subtitle {
-  color: $colorPrimary;
-  font-family: $fontTitle;
-  font-size: 21px;
-  font-weight: 600;
-  text-align: center;
-  letter-spacing: 0.5px;
-  line-height: 2.05;
-  margin-bottom: 5px;
-  margin-top: 0px;
-
-}
-
-.square {
-    background-color: $colorBackground;
-    height: 30px;
-    width: 30px;
-    position: absolute;
-    left: 50%;
-    transform: translate(-15px,-15px) rotate(45deg);
-}
-
-@media all and (min-width:768px){
-
-    .strengths-and-weaknesses {
-        width: 100vw;
-        background-color: 
-        $colorBackground;
-        text-align: center;
-        display: flex;
-        flex-direction: row;
-        padding-bottom: 60px;
-        justify-content: space-around;
-        background-color: $colorBackground;
-        box-sizing: border-box;
-        align-items: baseline;
-        padding-top: 45px;
-        align-content: center;
-    }
-
-    .strengths{
-        
-        flex-basis: 50%;
-    }
-  
-    .weaknesses{
-        
-        flex-basis: 50%;
-    }
-    .subtitle{
-        margin-bottom: 15px;
-    }
-
-    .contents{
-        margin-bottom: 0px;
-        margin-left: 45px;
-        padding-right: 15px;
-        margin-right: 15px;
-        vertical-align: center;
-    }
-
-    .contentd{
+    @media all and (min-width:1200px) {
+        margin-left: 138px;
         margin-right: 45px;
-        margin-left: 0px;
-        padding-left: 15px;
-        margin-left: 0px;
+        flex-basis: 50%;
+
+}
+}
+
+.main__container-subtitle{
+    color: $colorPrimary;
+    font-family: $fontTitle;
+    font-size: 21px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.5px;
+    line-height: 2.05;
+    margin-bottom: 5px;
+    margin-top: 0px;
+
+    @media all and (min-width:768px){
+        margin-bottom: 15px;
+    }   
+
+}
+
+.main__container-strengths{
+    @media all and (min-width:768px){
+    flex-basis: 50%;
+    margin-left: 45px;
+    }
+
+    @media all and (min-width:1200px){
+        flex-basis: 50%;
+        margin-left: 138px;
+        margin-right: 45px;
+        max-width: 439px;
     }
 }
 
-@media all and (min-width:1200px) {
-
-    .strengths-and-weaknesses {
-        display: flex;
-        flex-direction: row;
-        padding-top: 30px;
-        padding-bottom: 45px;
-     
+.container_content-strengths{
+    @media all and (min-width:768px){
+       margin-bottom: 0px;
         
     }
 
-    .strengths{
-      margin-left: 138px;
-      margin-right: 45px;
-      flex-basis: 50%;
-  }
-
-  .weaknesses{
-      margin-right: 139px;
-      margin-left: 0px;
-      flex-basis: 50%;
-  }
-
-  .contents{
-      margin:  0px;
-      padding: 0px;
-
-  }
-
-  .contentd{
-    margin: 0px;
-    padding: 0px;
- }
-
+    @media all and (min-width:1200px){
+        margin:  0px;
+        padding: 0px;
+  
+    }
 }
+
+.main__container-weaknesses{
+ 
+
+    @media all and (min-width:768px){
+        flex-basis: 50%;
+        margin-right: 45px;
+    }
+
+    @media all and (min-width:1200px){
+        flex-basis: 50%;
+        margin-right: 138px;
+        max-width: 439px;
+    }
+}
+
+.container_content-weaknesses{
+
+           margin-bottom: 0px;
+
+    @media all and (min-width:768px){
+      
+    }
+
+    @media all and (min-width:1200px){
+        margin: 0px;
+        padding: 0px;
+         
+    }
+}
+
+
+ 
