@@ -1,41 +1,45 @@
-<section class="section__content" id="contact">
-    <h2 class="section__title">Contact</h2>
-    <p>
+<section class="form__container" id="contact">
+    <h2 class="contact__title">Contact</h2>
+    <p class="contact__text">
         Doubts, questions or just any comment, we will be happy to receive and answer it! Please, do not hesitate to
         write us!
     </p>
 
-    <p class="form__rule">All fields marked with <span class="form__box-required">*</span> are required</p>
+    <p class="form__rule">All fields marked with <span class="form__asterisk">*</span> are required</p>
 </section>
+<div class="form__container">
+<form action="/signup" method="post">
 
-<form class="form__main-container" action="/signup" method="post">
-
-    <div class="form__box-name">
-        <label for="name">Full name
-            <span class="form__box-required">*</span>
+    <div class="form__name">
+        <label class="form1" for="name">Full name
+            <span class="form__asterisk">*</span>
         </label>
-        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        <input class="form6" type="text" id="name" name="name" placeholder="Enter your full name" required>
     </div>
-
-    <div class="form__box-email">
-        <label for="mail">Email
-            <span class="form__box-required">*</span>
+    <div class="contact__data">
+    <div class="form__email">
+        <label class="form2" for="mail">Email
+            <span class="form__asterisk">*</span>
         </label>
-        <input type="email" id="mail" name="email" placeholder="your-email@example.com" required>
+        <input class="form7" type="email" id="mail" name="email" placeholder="your-email@example.com" required>
     </div>
-
-    <div class="form__box-phone">
-        <label for="phone">Phone number</label>
-        <input type="tel" id="phone" name="phone" placeholder="Ex: 123456789">
+    
+    <div class="form__phone">
+        <label class="form3" for="phone">Phone number</label>
+        <input class="form8" type="tel" id="phone" name="phone" placeholder="Ex: 123456789">
     </div>
-
-    <div class="form__box-message">
-        <label for="message">Message
-            <span class="form__box-required">*</span>
+    </div>
+    <div class="form__message">
+        <label class="form4" for="message">Message
+            <span class="form__asterisk">*</span>
         </label>
-        <textarea id="message" name="message" rows="8" cols="80" placeholder="Write your message here"
+        <textarea class="form9" id="message" name="message" rows="8" cols="80" placeholder="Write your message here"
             required></textarea>
     </div>
 
-    <button class="form__button" type="submit">Send</button>
+    <div class="form__submit">
+        <label class="form5 visually-hidden" for="submit">Enviar</label>
+        <input class="form10" id="submit" name="submit" value="Enviar"/>
+    </div>
 </form>
+</div>
