@@ -1,14 +1,6 @@
-
-/*GENERAL*/
-body{
-    background-color: white;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
-}
-
 // Core
 @import 'core/variable';
+@import 'layout/form';
 
 
 /*layout*/
@@ -19,6 +11,16 @@ body{
 
 @import 'core/variable';
 @import 'layout/teamcss';
+
+/*GENERAL*/
+body{
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+
 
 /*CSS STRENGTHS-WEAKNESSES*/
 

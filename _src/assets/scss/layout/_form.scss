@@ -1,13 +1,10 @@
 
-
-
 %styleTitles {
     font-family: $fontTitle;
     line-height: $lineHeightTitle;
     display: block;
     /*https://stackoverflow.com/questions/12707879/how-to-enumerate-scss-classes*/
 
-   
 }
 
 %styleCells {
@@ -47,9 +44,7 @@ input {
         font-family: $fontContent;
         font-size: 14px;
         color: $colorTextPrimary;
-    }
-
-    
+    }  
 }
 
 .form10 {
@@ -77,7 +72,7 @@ textarea {
     
 }
 
-.form-text__container {
+.form__container {
     display: flex;
     justify-content: center;
     flex-direction: column;
