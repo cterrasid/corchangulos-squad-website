@@ -1,0 +1,41 @@
+<section class="section__content">
+    <h2 class="section__title">Contact</h2>
+    <p>
+        Doubts, questions or just any comment, we will be happy to receive and answer it! Please, do not hesitate to
+        write us!
+    </p>
+
+    <p class="form__rule">All fields marked with <span class="form__box-required">*</span> are required</p>
+</section>
+
+<form class="form__main-container" action="/signup" method="post">
+
+    <div class="form__box-name">
+        <label for="name">Full name
+            <span class="form__box-required">*</span>
+        </label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+    </div>
+
+    <div class="form__box-email">
+        <label for="mail">Email
+            <span class="form__box-required">*</span>
+        </label>
+        <input type="email" id="mail" name="email" placeholder="your-email@example.com" required>
+    </div>
+
+    <div class="form__box-phone">
+        <label for="phone">Phone number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Ex: 123456789">
+    </div>
+
+    <div class="form__box-message">
+        <label for="message">Message
+            <span class="form__box-required">*</span>
+        </label>
+        <textarea id="message" name="message" rows="8" cols="80" placeholder="Write your message here"
+            required></textarea>
+    </div>
+
+    <button class="form__button" type="submit">Send</button>
+</form>
