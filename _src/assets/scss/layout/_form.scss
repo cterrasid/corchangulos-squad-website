@@ -1,0 +1,180 @@
+
+
+
+%styleTitles {
+    font-family: $fontTitle;
+    line-height: $lineHeightTitle;
+    display: block;
+    /*https://stackoverflow.com/questions/12707879/how-to-enumerate-scss-classes*/
+
+   
+}
+
+%styleCells {
+    display: block;
+    border: 1px solid $colorTextPrimary;
+    width: 290px;
+    height: 45px;
+
+        @media all and (min-width: 768px) {
+            width: 442px;
+        }
+
+        @media all and (min-width: 1200px) {
+            width: 601px;
+        }
+}
+
+@for $i from 1 to 6 {
+  .form#{$i}{
+    @extend %styleTitles;
+  }
+}
+
+@for $i from 6 to 11 {
+    .form#{$i} {
+        @extend %styleCells
+    }
+}
+
+input {
+    --webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    box-sizing: border-box;
+    padding: 11px 0 15px 15px;
+    ::placeholder {
+        font-family: $fontContent;
+        font-size: 14px;
+        color: $colorTextPrimary;
+    }
+
+    
+}
+
+.form10 {
+    background-color: $colorPrimary;
+    color: #fff;
+    border-radius: 4px;
+    text-align: center;
+    font-family: $fontTitle;
+    font-size: $fontMainContent;
+    line-height: $lineHeightContent;
+    text-transform: uppercase;
+    padding: 0;
+    font-weight: 500;
+}
+
+textarea {
+    --webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    box-sizing: border-box;
+    padding: 11px 0 15px 15px;
+    font-family: $fontContent;
+    font-size: 14px;
+    color: $colorTextPrimary;
+    
+}
+
+.form-text__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 290px;
+    margin: auto;
+
+    @media all and (min-width: 768px) {
+        width: 442px;
+    }
+
+    @media all and (min-width: 1200px) {
+        width: 601px;
+    }
+
+}
+
+.form__asterisk {
+    color: $colorSecondary;
+}
+
+.form__container {
+    display: flex;
+    justify-content: center;
+    
+   
+}
+
+.contact__title {
+    font-family: $fontTitle;
+    font-size: $fontTitleSize;
+    line-height: $lineHeightTitle;
+    color: $colorPrimary;
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+
+    @media all and (min-width: 1200px) {
+        margin-top: 45px;
+    }
+}
+
+.contact__text {
+    font-family: $fontContent;
+    font-size: $fontMainContent;
+    line-height: $lineHeightContent;
+    color: $colorTextSecondary;
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+.form__rule {
+    font-family: $fontContent;
+    font-size: x-small;
+    line-height: $lineHeightContent;
+    color: $colorTextSecondary;
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+.form__button {
+    margin-bottom: 60px;
+    margin-top: 20px;
+}
+
+.visually-hidden {
+    /*https://snook.ca/archives/html_and_css/hiding-content-for-accessibility*/
+   position: absolute !important;
+   height: 1px; width: 1px;
+   overflow: hidden;
+   clip: rect(1px 1px 1px 1px);  /*IE6, IE7 */
+   clip: rect(1px, 1px, 1px, 1px);
+}
+
+.contact__data {
+    @media all and (min-width: 1200px) {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.form7 {
+    @media all and (min-width: 1200px) {
+        width: 395px;
+        margin-right: 44px;
+    }
+}
+
+.form8 {
+    @media all and (min-width: 1200px) {
+        width: 162px;
+    }
+}
+
+.form9 {
+    min-height: 105px;
+}
