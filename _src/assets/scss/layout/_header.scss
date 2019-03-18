@@ -1,5 +1,11 @@
 /*CSS HEADER*/
 
+.main__content{
+    visibility: hidden;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+}
 
 .headcontainer{
     @media all and (min-width:1200px){
@@ -110,8 +116,10 @@
     padding: 16px 2px;
 
     &:hover{
-        text-shadow: $colorSecondary;
-        border: $colorSecondary solid 2px;
+        transition: background ease .5s, text-shadow ease .5s;
+        border-radius: 10px;
+        background-color: #34dbcb;
+        text-shadow: 2px 2px $colorPrimary;
     }
 }
 
