@@ -1,15 +1,10 @@
 /*CSS HEADER*/
 
-.mainheader{
-    height: 467px;
-
-    @media all and (min-width:768px){
-        height: 421px;
-    }
-
-    @media all and (min-width:1200px){
-        height: 550px;
-    }
+.main__content{
+    visibility: hidden;
+    position: absolute;
+    width: 40px;
+    height: 40px;
 }
 
 .headcontainer{
@@ -43,14 +38,19 @@
     }
 }
 
-.namegroup{
-    height: 60px;
-    background-color: $colorPrimary;
+.header__title{
     color: white;
     font-family: $fontTitle;
     font-size: $fontMainContent;
     font-weight: 600;
     text-transform: uppercase;
+    text-decoration: none;
+}
+.namegroup{
+    height: 60px;
+    margin-top:0px;
+    margin-bottom: 0px;
+    background-color: $colorPrimary;    
     opacity: 0.95;    
     letter-spacing: 1px; 
     display: flex;
@@ -98,6 +98,7 @@
     width: 100%;
     list-style: none;
     padding: 0px;
+    margin: 0px;
     display: flex;
     justify-content: space-evenly; 
     align-items:center;   
@@ -112,6 +113,14 @@
     text-transform: uppercase;
     font-weight: 600;
     text-decoration: none;
+    padding: 16px 2px;
+
+    &:hover{
+        transition: background ease .5s, text-shadow ease .5s;
+        border-radius: 10px;
+        background-color: #34dbcb;
+        text-shadow: 2px 2px $colorPrimary;
+    }
 }
 
 .hero__home{
@@ -148,11 +157,17 @@
 }
 
 .centerclaim{
+    position: absolute;
+    transform: translate(0px, -39px);
+
+    @media all and (min-width:768px){
+        position: absolute;
+        transform: translate(0px, -80px);
+    }
 
     @media all and (min-width:1200px){
-
-        max-width: 1200px;
-        margin: auto;
+        position: absolute;
+        right: 50%;
         transform: translate(0px, -90px);
         
     }
@@ -167,7 +182,6 @@
     line-height: 1.39;
     font-weight: 600;
     text-align: center;
-    transform: translate(0px, -39px);
     letter-spacing: 1px;
 
     @media all and (min-width:768px){
@@ -175,14 +189,12 @@
         width: 381px;
         margin-left: 45px;
         opacity: 0.7;
-        transform: translate(0px, -80px);
     }
 
     @media all and (min-width:1200px){
         height: 60px;
         margin-left: 138px;
         max-width: 574px;
-        transform: translate(0px, 0px);
     }
 }
 
