@@ -32,14 +32,17 @@
     }
 }
 
-.namegroup{
-    height: 60px;
-    background-color: $colorPrimary;
+.header__title{
     color: white;
     font-family: $fontTitle;
     font-size: $fontMainContent;
     font-weight: 600;
     text-transform: uppercase;
+    text-decoration: none;
+}
+.namegroup{
+    height: 60px;
+    background-color: $colorPrimary;    
     opacity: 0.95;    
     letter-spacing: 1px; 
     display: flex;
