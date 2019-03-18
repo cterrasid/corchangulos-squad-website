@@ -4,7 +4,6 @@
     line-height: $lineHeightTitle;
     display: block;
     /*https://stackoverflow.com/questions/12707879/how-to-enumerate-scss-classes*/
-
 }
 
 %styleCells {
@@ -47,19 +46,6 @@ input {
     }  
 }
 
-.form10 {
-    background-color: $colorPrimary;
-    color: #fff;
-    border-radius: 4px;
-    text-align: center;
-    font-family: $fontTitle;
-    font-size: $fontMainContent;
-    line-height: $lineHeightContent;
-    text-transform: uppercase;
-    padding: 0;
-    font-weight: 500;
-}
-
 textarea {
     --webkit-appearance: none;
     -moz-appearance: none;
@@ -72,73 +58,111 @@ textarea {
     
 }
 
-.form__container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    width: 290px;
-    margin: auto;
+.contact{
+    &__title {
+        font-family: $fontTitle;
+        font-size: $fontTitleSize;
+        line-height: $lineHeightTitle;
+        text-transform: uppercase;
+        color: $colorPrimary;
+        text-align: center;
+        display: block;
+        width: 100%;
+        margin-top: 30px;
 
-    @media all and (min-width: 768px) {
-        width: 442px;
+        @media all and (min-width: 1200px) {
+            margin-top: 45px;
+        }
     }
 
-    @media all and (min-width: 1200px) {
-        width: 601px;
+    &__text {
+        font-family: $fontContent;
+        font-size: $fontMainContent;
+        line-height: $lineHeightContent;
+        color: $colorTextSecondary;
+        text-align: center;
+        display: block;
+        width: 100%;
     }
 
+    &__data {
+        @media all and (min-width: 1200px) {
+            display: flex;
+            flex-direction: row;
+        }
+    }
 }
 
-.form__asterisk {
-    color: $colorSecondary;
-}
+.form {
 
-.form__container {
-    display: flex;
-    justify-content: center;
+    &__container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 290px;
+        margin: auto;
     
-   
-}
-
-.contact__title {
-    font-family: $fontTitle;
-    font-size: $fontTitleSize;
-    line-height: $lineHeightTitle;
-    color: $colorPrimary;
-    text-align: center;
-    display: block;
-    width: 100%;
-    margin-top: 30px;
-
-    @media all and (min-width: 1200px) {
-        margin-top: 45px;
+        @media all and (min-width: 768px) {
+            width: 442px;
+        }
+    
+        @media all and (min-width: 1200px) {
+            width: 601px;
+        }
     }
-}
+    
+    &__asterisk {
+        color: $colorSecondary;
+    }
 
-.contact__text {
-    font-family: $fontContent;
-    font-size: $fontMainContent;
-    line-height: $lineHeightContent;
-    color: $colorTextSecondary;
-    text-align: center;
-    display: block;
-    width: 100%;
-}
+    &__rule {
+        font-family: $fontContent;
+        font-size: x-small;
+        line-height: $lineHeightContent;
+        color: $colorTextSecondary;
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
 
-.form__rule {
-    font-family: $fontContent;
-    font-size: x-small;
-    line-height: $lineHeightContent;
-    color: $colorTextSecondary;
-    text-align: center;
-    display: block;
-    width: 100%;
-}
+    &__button {
+        margin-bottom: 60px;
+        margin-top: 20px;
+    }
 
-.form__button {
-    margin-bottom: 60px;
-    margin-top: 20px;
+    &7 {
+        @media all and (min-width: 1200px) {
+        width: 395px;
+        margin-right: 44px;
+        }
+    }
+
+    &8 {
+        @media all and (min-width: 1200px) {
+        width: 162px;
+        }   
+    }
+
+    &9 {
+        min-height: 105px;
+    }
+    
+    &10 {
+        box-sizing: content-box;
+        margin-top: 30px;
+        margin-bottom: 60px;
+        background-color: $colorPrimary;
+        color: #fff;
+        border-radius: 4px;
+        text-align: center;
+        font-family: $fontTitle;
+        font-size: $fontMainContent;
+        line-height: $lineHeightContent;
+        text-transform: uppercase;
+        padding: 0;
+        font-weight: 500;
+    }
 }
 
 .visually-hidden {
@@ -148,34 +172,4 @@ textarea {
    overflow: hidden;
    clip: rect(1px 1px 1px 1px);  /*IE6, IE7 */
    clip: rect(1px, 1px, 1px, 1px);
-}
-
-.contact__data {
-    @media all and (min-width: 1200px) {
-        display: flex;
-        flex-direction: row;
-    }
-}
-
-.form7 {
-    @media all and (min-width: 1200px) {
-        width: 395px;
-        margin-right: 44px;
-    }
-}
-
-.form8 {
-    @media all and (min-width: 1200px) {
-        width: 162px;
-    }
-}
-
-.form9 {
-    min-height: 105px;
-}
-
-.form10 {
-    box-sizing: content-box;
-    margin-top: 30px;
-    margin-bottom: 60px;
 }
