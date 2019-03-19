@@ -8,18 +8,26 @@
         height: 161px;
     }
 }
+.container__center {
+    margin: auto;
+    max-width: 1200px;
+}
 .footer__container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 250px;
+
     @media all and (min-width:768px) {
-        align-items: flex-start;
-        margin-left: 45px;
-        margin-bottom: 60px;
+        height: 90px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 26px 1fr;
+        grid-template-areas: "copyright links""logo links";
+        margin: 24px 45px 56px;
     }
     @media all and (min-width:1200px) {
-        align-items: flex-start;
-        margin-left: 138px;
+        margin: 24px 138px 47px;
     }
 }
 .copyright {
@@ -28,6 +36,10 @@
     color: $colorTextPrimary;
     margin-top: 30px;
     margin-bottom: 0px;
+    @media all and (min-width:768px) {
+        grid-area: copyright;
+        margin-top: 6px;
+    }
 }
 .logo-adalab {
     width: 115.9px;
@@ -35,29 +47,25 @@
     margin-top: 30px;
     
     @media all and (min-width:768px){
+        grid-area: logo;
         position: relative;
         left: -10px;
         margin-top: 15px;
-        
+        margin-bottom: 4px;
     }
 }
 .footer__list {
+    grid-area: links;
     text-align: center;
     list-style: none;
     padding: 0px;
     margin-top: 20px;
     margin-bottom: 0px;
     @media all and (min-width:768px){
-            position: absolute;
-            right: 45px;
-            line-height: 30px;
-            text-align: right;
-            margin-top: 24px;
-    }
-    @media all and (min-width:1200px) {
-             position: absolute;
-             right: 138px;
-             margin-top: 24px;
+        grid-area: links;
+        line-height: 30px;
+        text-align: right;
+        margin: 0;
     }
 }
 .footer__list--link {
