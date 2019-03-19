@@ -1,7 +1,5 @@
 @import 'core/variable';
 
-/*SECTION TITLE*/
-
 #about-us {
     margin-bottom: 60px;
     box-sizing: border-box;
@@ -34,9 +32,6 @@
         }
     }
 }
-
-
-/*ADALABERS*/
 
 #antonella, #ioana, #valeria {
 
@@ -73,9 +68,6 @@
     }
 
 }
-
-
-/*PHOTOS*/
 
 .photo__container {
     box-sizing: content-box;
@@ -134,11 +126,6 @@
     }
 }
 
-body {
-    margin: 0px;
-    padding: 0px;
-}
-
 %styleCircle {
     position: absolute;
     height: 200px;
@@ -151,6 +138,7 @@ body {
 %styleImage {
     width: 100%;
 }
+
 @keyframes squareToCircle {
     0% {transform: translatey(300px);    
     }
@@ -170,8 +158,6 @@ body {
     animation-duration: 4s;
     animation-iteration-count: 1;
 }
-  
-
 
 @for $i from 1 to 6 {
     .circle#{$i}{
@@ -211,7 +197,6 @@ body {
     transform: translate(100%, 400%);
 }
 
-
 %styleFlipCard {
     background-color: transparent;
     width: 200px;
@@ -224,7 +209,6 @@ body {
         @extend %styleFlipCard;
     }
 }
-
 
 %styleFlipCardInner {
     position: relative;
@@ -240,7 +224,6 @@ body {
         @extend %styleFlipCardInner;
     }
 }
-
 
 %styleFlipCardFrontBack {
     position: absolute;
@@ -298,8 +281,7 @@ body {
         @extend %styleBackImage;
     }
 }
-  
-  
+    
 %styleFlipCardBack {
     background-color: dodgerblue;
     color: white;
@@ -340,8 +322,6 @@ body {
 .front-image1 {
     width: 100%;
 }
-
-/*TEXT*/
 
 .adalaber__info-container {
     display: flex;
@@ -441,9 +421,6 @@ body {
     }
 
 }
-
-
-/*ICONS*/
 
 *::before, *::after {
     box-sizing: border-box;
