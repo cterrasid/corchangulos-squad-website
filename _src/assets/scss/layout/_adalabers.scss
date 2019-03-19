@@ -134,6 +134,212 @@
     }
 }
 
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+%styleCircle {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid grey;
+}
+
+%styleImage {
+    width: 100%;
+}
+@keyframes squareToCircle {
+    0% {transform: translatey(300px);    
+    }
+    100% {}
+}
+
+%styleImageContainer {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /*-webkit-animation: squareToCircle 3s infinite;*/
+    animation-name: squareToCircle;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+}
+  
+
+
+@for $i from 1 to 6 {
+    .circle#{$i}{
+      @extend %styleCircle;
+    }
+}
+
+@for $i from 1 to 6 {
+    .image#{$i}{
+      @extend %styleImage;
+    }
+}
+
+@for $i from 1 to 6 {
+    .image__container#{$i}{
+      @extend %styleImageContainer;
+    }
+}
+
+.circle1 {
+    transform: translate(100%, 0%);
+}
+
+.circle2 {
+    transform: translate(100%, 100%);
+}
+
+.circle3 {
+    transform: translate(100%, 200%);
+}
+
+.circle4 {
+    transform: translate(100%, 300%);
+}
+
+.circle5 {
+    transform: translate(100%, 400%);
+}
+
+
+%styleFlipCard {
+    background-color: transparent;
+    width: 200px;
+    height: 200px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+@for $i from 1 to 6 {
+    .flip-card#{$i} {
+        @extend %styleFlipCard;
+    }
+}
+
+
+%styleFlipCardInner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+@for $i from 1 to 6 {
+    .flip-card-inner#{$i} {
+        @extend %styleFlipCardInner;
+    }
+}
+
+
+%styleFlipCardFrontBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+
+@for $i from 1 to 6 {
+    .flip-card-front#{$i} {
+        @extend %styleFlipCardFrontBack;
+    }
+
+    .flip-card-back#{$i} {
+        @extend %styleFlipCardFrontBack;
+    }
+}
+
+.flip-card1:hover .flip-card-inner1 {
+    transform: rotateY(180deg);
+}
+
+.flip-card2:hover .flip-card-inner2 {
+    transform: rotateY(180deg);
+}
+
+.flip-card3:hover .flip-card-inner3 {
+    transform: rotateY(180deg);
+}
+
+.flip-card4:hover .flip-card-inner4 {
+    transform: rotateY(180deg);
+}
+
+.flip-card5:hover .flip-card-inner5 {
+    transform: rotateY(180deg);
+}
+
+%styleFrontImage {
+    width: 100%;
+}
+
+@for $i from 1 to 6 {
+    .front-image#{$i} {
+        @extend %styleFrontImage;
+    }
+}
+
+%styleBackImage {
+    width: 100%;
+}
+
+@for $i from 1 to 6 {
+    .back-image#{$i} {
+        @extend %styleBackImage;
+    }
+}
+  
+  
+%styleFlipCardBack {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+@for $i from 1 to 6 {
+    .flip-card-back#{$i} {
+        @extend %styleFlipCardBack;
+    }
+}
+  
+.flip-card-front1 {
+    background-color: pink;
+    color: black;
+}
+
+.flip-card-front2 {
+    background-color: rgb(56, 184, 216);
+    color: black;
+}
+
+.flip-card-front3 {
+    background-color: rgb(33, 148, 201);
+    color: black;
+}
+
+.flip-card-front4 {
+    background-color: rgb(23, 168, 168);
+    color: black;
+}
+
+.flip-card-front5 {
+    background-color: rgb(105, 65, 199);
+    color: black;
+}
+  
+.front-image1 {
+    width: 100%;
+}
 
 /*TEXT*/
 
