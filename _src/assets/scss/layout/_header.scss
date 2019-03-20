@@ -1,10 +1,13 @@
 /*CSS HEADER*/
 
 .main__content{
-    visibility: hidden;
+    z-index: 0;
     position: absolute;
-    width: 40px;
-    height: 40px;
+
+    &:focus{
+        z-index: 10;
+        border: $colorSecondary solid 2px;
+    }
 }
 
 .headcontainer{
