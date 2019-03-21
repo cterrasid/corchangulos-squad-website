@@ -115,6 +115,7 @@
     text-decoration: none;
     padding: 16px 2px;
 
+
     &:hover{
         transition: background ease .5s, text-shadow ease .5s;
         border-radius: 10px;
@@ -124,34 +125,32 @@
 }
 
 .hero__home{
-    height: 421px;
+    height: 360px;
     background-image: url(../images/cover.jpg);   
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
-    transition: height ease 5s;
-
-    &:hover{
-        height: 700px;
-    }
     
 
     @media all and (min-width:768px){
         height: 421px;
+
     }
 
     @media all and (min-width:1200px){
         height: 550px;
+
     }
 }
 
 .hero__contact{
     height: 300px;
     background-color: black;
-    background-image: url(../images/cover.jpg);   
+    background-image: url(../images/hero3.jpg);   
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
+
 
     @media all and (min-width:768px){
         height: 300px;
