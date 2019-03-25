@@ -138,8 +138,7 @@
     animation-iteration-count: 1;
 
     @keyframes heroanim {
-    0% {transform: scale(1);}
-    50% {transform: scale(1.5);}
+    0% {transform: scale(0);}
     100% {transform: scale(1);}
 }
     
