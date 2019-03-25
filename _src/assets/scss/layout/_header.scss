@@ -118,6 +118,7 @@
     text-decoration: none;
     padding: 16px 2px;
 
+
     &:hover{
         transition: background ease .5s, text-shadow ease .5s;
         border-radius: 10px;
@@ -132,13 +133,25 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    animation-name: heroanim;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+
+    @keyframes heroanim {
+    0% {transform: scale(0.1);}
+    50% {transform: scale(1.2);}
+    100% {transform: scale(1);}
+}
+    
 
     @media all and (min-width:768px){
         height: 421px;
+
     }
 
     @media all and (min-width:1200px){
         height: 550px;
+
     }
 }
 
@@ -149,6 +162,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
 
     @media all and (min-width:768px){
         height: 300px;
@@ -203,6 +217,20 @@
 
 .claim__home p{
     margin:0px;
+    animation-name: claimanim;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+
+    @keyframes claimanim {
+    from {
+    margin-left: 100%;
+    width: 300%; 
+    }
+    to {
+    margin-left: 0%;
+    width: 100%;
+    }
+    }
 
     @media all and (min-width:1200px){
         margin: 8px 0px;
