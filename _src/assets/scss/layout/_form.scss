@@ -12,6 +12,7 @@
     border: 1px solid $colorTextPrimary;
     width: 290px;
     height: 45px;
+    transition: border ease-in .5s;
 
         @media all and (min-width: 768px) {
             width: 442px;
@@ -19,6 +20,11 @@
 
         @media all and (min-width: 1200px) {
             width: 601px;
+        }
+
+        &:hover{
+            border: 2px solid $colorSecondary;
+            border-radius: 2px;
         }
 }
 
