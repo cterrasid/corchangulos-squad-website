@@ -128,16 +128,20 @@
 }
 
 .hero__home{
-<<<<<<< HEAD
-    height: 360px;
-    background-image: url(../images/cover.jpg);   
-=======
     height: 421px;
     background-image: url(../images/fondo-marvel.jpg);   
->>>>>>> master
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    animation-name: heroanim;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+
+    @keyframes heroanim {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.5);}
+    100% {transform: scale(1);}
+}
     
 
     @media all and (min-width:768px){
@@ -213,6 +217,20 @@
 
 .claim__home p{
     margin:0px;
+    animation-name: claimanim;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+
+    @keyframes claimanim {
+    from {
+    margin-left: 100%;
+    width: 300%; 
+    }
+    to {
+    margin-left: 0%;
+    width: 100%;
+    }
+    }
 
     @media all and (min-width:1200px){
         margin: 8px 0px;
